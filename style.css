@@ -302,6 +302,7 @@ button[type="submit"]:hover { transform: scale(1.02); background: white; }
     z-index: 99999;
     justify-content: center;
     align-items: center;
+    flex-direction: column; /* NOUVEAU : Pour afficher le texte sous l'image */
     opacity: 0;
     transition: opacity 0.3s ease;
 }
@@ -324,6 +325,16 @@ button[type="submit"]:hover { transform: scale(1.02); background: white; }
     color: white;
     font-size: 40px;
     cursor: pointer;
+}
+
+/* --- NOUVEAU : CAPTION LIGHTBOX --- */
+.lightbox-caption {
+    color: #ffffff;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    text-align: center;
+    max-width: 80%;
+    font-family: inherit;
 }
 
 /* --- RESPONSIVE MOBILE (SMARTPHONES) --- */
